@@ -66,8 +66,6 @@ DEF NUM_FISHGROUPS EQU const_value - 1
 
 ; SpawnPoints indexes (see data/maps/spawn_points.asm)
 	const_def
-	const SPAWN_HOME
-	const SPAWN_DEBUG
 ; kanto
 	const SPAWN_PALLET
 	const SPAWN_VIRIDIAN
@@ -81,6 +79,7 @@ DEF NUM_FISHGROUPS EQU const_value - 1
 	const SPAWN_FUCHSIA
 	const SPAWN_CINNABAR
 	const SPAWN_INDIGO
+	const SPAWN_DEBUG
 ; johto
 	const SPAWN_NEW_BARK
 	const SPAWN_CHERRYGROVE
@@ -97,25 +96,12 @@ DEF NUM_FISHGROUPS EQU const_value - 1
 	const SPAWN_MT_SILVER
 	const SPAWN_FAST_SHIP
 DEF NUM_SPAWNS EQU const_value
+DEF SPAWN_HOME EQU SPAWN_PALLET
 
 DEF SPAWN_N_A EQU -1
 
 ; Flypoints indexes (see data/maps/flypoints.asm)
 	const_def
-; johto
-DEF JOHTO_FLYPOINT EQU const_value
-	const FLY_NEW_BARK
-	const FLY_CHERRYGROVE
-	const FLY_VIOLET
-	const FLY_AZALEA
-	const FLY_GOLDENROD
-	const FLY_ECRUTEAK
-	const FLY_OLIVINE
-	const FLY_CIANWOOD
-	const FLY_MAHOGANY
-	const FLY_LAKE_OF_RAGE
-	const FLY_BLACKTHORN
-	const FLY_MT_SILVER
 ; kanto
 DEF KANTO_FLYPOINT EQU const_value
 	const FLY_PALLET
@@ -130,6 +116,20 @@ DEF KANTO_FLYPOINT EQU const_value
 	const FLY_FUCHSIA
 	const FLY_CINNABAR
 	const FLY_INDIGO
+; johto
+DEF JOHTO_FLYPOINT EQU const_value
+	const FLY_NEW_BARK
+	const FLY_CHERRYGROVE
+	const FLY_VIOLET
+	const FLY_AZALEA
+	const FLY_GOLDENROD
+	const FLY_ECRUTEAK
+	const FLY_OLIVINE
+	const FLY_CIANWOOD
+	const FLY_MAHOGANY
+	const FLY_LAKE_OF_RAGE
+	const FLY_BLACKTHORN
+	const FLY_MT_SILVER
 DEF NUM_FLYPOINTS EQU const_value
 
 DEF MAX_OUTDOOR_SPRITES EQU 23 ; see engine/overworld/overworld.asm
