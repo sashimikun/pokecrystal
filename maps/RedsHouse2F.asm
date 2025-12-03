@@ -2,6 +2,16 @@ RedsHouse2F_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	callback MAPCALLBACK_NEWMAP, RedsHouse2FInitializeRoomCallback
+
+RedsHouse2FInitializeRoomCallback:
+	checkevent EVENT_INITIALIZED_EVENTS
+	iftrue .SkipInitialization
+	jumpstd InitializeEventsScript
+	endcallback
+
+.SkipInitialization:
+	endcallback
 
 RedsHouse2FN64Script:
 	jumptext RedsHouse2FN64Text
