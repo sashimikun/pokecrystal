@@ -283,16 +283,19 @@ INCLUDE "engine/printer/printer_serial.asm"
 INCLUDE "engine/printer/printer.asm"
 INCLUDE "gfx/battle_anims.asm"
 INCLUDE "engine/events/halloffame.asm"
-
-
-SECTION "Crystal Features 2", ROMX
-
 INCLUDE "engine/events/kurt.asm"
-INCLUDE "engine/gfx/player_gfx.asm"
-INCLUDE "mobile/mobile_22.asm"
 INCLUDE "engine/events/unown_walls.asm"
 INCLUDE "engine/events/buena.asm"
 INCLUDE "engine/events/dratini.asm"
+
+
+SECTION "bank22", ROMX
+
+INCLUDE "engine/gfx/player_gfx.asm"
+
+SECTION "Crystal Features 2", ROMX
+
+INCLUDE "mobile/mobile_22.asm"
 INCLUDE "engine/events/battle_tower/rules.asm"
 INCLUDE "mobile/mobile_22_2.asm"
 
