@@ -8,10 +8,7 @@ SpawnPoints:
 ; entries correspond to SPAWN_* constants
 	table_width 4
 
-	spawn PLAYERS_HOUSE_2F,            3,  3
-	spawn VIRIDIAN_POKECENTER_1F,      5,  3
-
-	spawn PALLET_TOWN,                 5,  6
+	spawn REDS_HOUSE_2F,               3,  3
 	spawn VIRIDIAN_CITY,              23, 26
 	spawn PEWTER_CITY,                13, 26
 	spawn CERULEAN_CITY,              19, 22
@@ -23,7 +20,7 @@ SpawnPoints:
 	spawn FUCHSIA_CITY,               19, 28
 	spawn CINNABAR_ISLAND,            11, 12
 	spawn ROUTE_23,                    9,  6
-
+	spawn VIRIDIAN_POKECENTER_1F,      5,  3
 	spawn NEW_BARK_TOWN,              13,  6
 	spawn CHERRYGROVE_CITY,           29,  4
 	spawn VIOLET_CITY,                31, 26
@@ -38,7 +35,6 @@ SpawnPoints:
 	spawn BLACKTHORN_CITY,            21, 30
 	spawn SILVER_CAVE_OUTSIDE,        23, 20
 	spawn FAST_SHIP_CABINS_SW_SSW_NW,  6,  2
-
 	spawn N_A,                        -1, -1
 
 	assert_table_length NUM_SPAWNS + 1

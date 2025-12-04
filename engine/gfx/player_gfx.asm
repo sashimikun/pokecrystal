@@ -83,15 +83,13 @@ GetPlayerNameArray: ; unreferenced
 	ret
 
 GetPlayerIcon:
-	ld de, ChrisSpriteGFX
-	ld b, BANK(ChrisSpriteGFX)
-	ld a, [wPlayerGender]
-	bit PLAYERGENDER_FEMALE_F, a
-	jr z, .got_gfx
-	ld de, KrisSpriteGFX
-	ld b, BANK(KrisSpriteGFX)
+	ld de, CharizardSpriteGFX
+	ld b, BANK(CharizardSpriteGFX)
 .got_gfx
 	ret
+
+CharizardSpriteGFX:
+INCBIN "gfx/pokemon/charizard/front.2bpp"
 
 GetCardPic:
 	ld hl, ChrisCardPic
@@ -201,10 +199,10 @@ DrawIntroPlayerPic:
 	ret
 
 ChrisPic:
-INCBIN "gfx/player/chris.2bpp"
+INCBIN "gfx/pokemon/charizard/front.2bpp"
 
 KrisPic:
-INCBIN "gfx/player/kris.2bpp"
+INCBIN "gfx/pokemon/charizard/front.2bpp"
 
 GetKrisBackpic:
 ; Kris's backpic is uncompressed.
@@ -215,4 +213,4 @@ GetKrisBackpic:
 	ret
 
 KrisBackpic:
-INCBIN "gfx/player/kris_back.2bpp"
+INCBIN "gfx/pokemon/charizard/back.2bpp"
